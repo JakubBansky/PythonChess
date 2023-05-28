@@ -1,10 +1,10 @@
 import pieces
 
 
+
 class Board():
     def __init__(self):
         self.board = []
-
     def initEmptyBoard(self, board):
         for i in range(8):
             row = []
