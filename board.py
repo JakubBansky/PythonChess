@@ -11,7 +11,6 @@ class Board():
             for j in range(8):
                 row.append(0)
             board.append(row)
-
     def printBoard(self, board):
         for row in board:
             for chessPiece in row:
