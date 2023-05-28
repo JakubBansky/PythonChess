@@ -1,35 +1,30 @@
     
 class chessPiece(): 
-    def __init__(self, color):
-        self.color = color
-        self.actualPosition = []
-        self.value = 0
-        self.name
+    def __init__(self, name, value, actualPosition):
+        self.actualPosition = actualPosition
+        self.value = value
+        self.name = name
+    def getName(self):
+        return self.name
+    
     def move(self, type):
         if (type is Pawn):
             pass
 class Pawn(chessPiece):
-    def __init__(self, actualPosition):
-        self.name = "p"
-        self.value = 1
-        self.actualPosition = actualPosition
+    def __init__(self, name, value, actualPosition):
+        super().__init__(name, value, actualPosition)
 class Knight(chessPiece):
-    def __init__(self):
-        self.name = "k"
-        self.value = 3
+    def __init__(self, name, value, actualPosition):
+        super().__init__(name, value, actualPosition)
 class Bishop(chessPiece):
-    def __init__(self):
-        self.name = "b"
-        self.value = 3
+    def __init__(self, name, value, actualPosition):
+        super().__init__(name, value, actualPosition)
 class Rook(chessPiece):
-    def __init__(self):
-        self.name = "r"
-        self.value = 5
+    def __init__(self, name, value, actualPosition):
+        super().__init__(name, value, actualPosition)
 class Queen(chessPiece):
-    def __init__(self):
-        self.name = "q"
-        self.value = 10
+    def __init__(self, name, value, actualPosition):
+        super().__init__(name, value, actualPosition)
 class King(chessPiece):
-    def __init__(self):
-        self.name = "k"
-        self.value = 100
+    def __init__(self, name, value, actualPosition):
+        super().__init__(name, value, actualPosition)
