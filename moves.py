@@ -16,8 +16,3 @@ class Moves():
     def bishopMove(self, moves):
         return moves
 
-
-
-
-p = Pawn()
-print(p.value)
